@@ -60,7 +60,7 @@ using ScrumProject.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(167, 1139, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b239e3d2e7f549fa992add91f419b4d8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4bd95a4381e487e82be899962ed1c83", async() => {
                 BeginContext(173, 1126, true);
                 WriteLiteral(@"
 
@@ -101,7 +101,7 @@ using ScrumProject.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1310, 4566, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "421a456f88634e47bcfdeb4043377ea3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8af5dd12cc6e40e2aeedc7b4ff220d95", async() => {
                 BeginContext(1330, 2211, true);
                 WriteLiteral(@"
 
@@ -149,7 +149,7 @@ using ScrumProject.Models;
                 WriteLiteral("b fa-twitter-square\"></i></span>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        ");
                 EndContext();
                 BeginContext(3541, 1267, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99ae4cfd88cc443b85238b4d3c64181c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f70da5327534355b8ca0d6e815b3b09", async() => {
                     BeginContext(3547, 1254, true);
                     WriteLiteral(@"
                             <div class=""input-group form-group"">

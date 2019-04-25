@@ -7,6 +7,9 @@
 }
 @model List<ScrumProject.Models.House>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,13 +74,13 @@
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+                <div class="intro-lead-in">Student Accomodation!</div>
+                <div class="intro-heading text-uppercase">Phòng trọ là chuyện nhỏ</div>
 
             </div>
         </div>
     </header>
-
+    
     <section>
         <div class="container">
             <div class="wrapper">
@@ -93,173 +96,189 @@
                     </div>
 
                     <div class="col-8">
+                            <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="#">Tin mới nhất</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Tin nổi bật</a>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Giá thấp trước</a>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Giá cao trước</a>
+                                           
+                                            </div>
+                                          </li>
+                                  </ul>
                     </div>
                 </div>
                 <hr>
                 <br>
                 <br>
                 <br>
-                
- 
-               
+
+
+
                 @for (int i = 0; i < Model.Count; i++)
-        {
-                <a href="#" class="houseDetail">
-                    <div class="row house shadow-sm">
-                        <div class="col-md-3 ">
-                            <img src="img/houses/@Model[i].Image" class="w-100">
+                {
+                    <a href="#" class="houseDetail">
+                        <div class="row house shadow-sm">
+                            <div class="col-md-3 ">
+                                <img src="img/houses/@Model[i].Image" class="w-100">
+                            </div>
+                            <div class="col-md-8 px-3">
+                                <div class="card-block px-3">
+                                    <h5 class="card-title">Nhà cho thuê @Model[i].Adress</h5>
+
+                                    <p class="card-text-price"> @Model[i].Price đ</p>
+                                    <p class="card-text"></p>
+                                    <br><br><br>
+                                    <p class="inf-footer"><i class="fa fa-user"></i> @Model[i].IdAccNavigation.User.Name | @Model[i].Area m |  @Model[i].Adress </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </a>
+
+
+                }
+
+                @*<div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/2.jpg" class="w-100">
                         </div>
                         <div class="col-md-8 px-3">
                             <div class="card-block px-3">
-                                <h5 class="card-title">Nhà cho thuê Quận 9</h5>
-                    
-                                <p class="card-text-price"> @Model[i].Price đ</p>
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
                                 <p class="card-text"></p>
-                                <br><br><br>
-                                <p class="inf-footer"><i class="fa fa-user"></i> @Model[i].IdAccNavigation.User.Name | @Model[i].Area m |  @Model[i].Adress </p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
                             </div>
                         </div>
                     </div>
-                    <br />
-                </a>
-           
-           
-        }
 
-                @*<div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/2.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/3.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/3.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/4.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/4.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/5.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/5.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/6.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/6.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/7.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/7.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/8.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/8.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/9.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/9.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./img/houses/10.jpg" class="w-100">
-            </div>
-            <div class="col-md-8 px-3">
-                <div class="card-block px-3">
-                    <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
-                    <p class="card-text-price">10.000.000.000 đ</p>
-                    <p class="card-text"></p>
-                    <br>
-                    <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
-                </div>
-            </div>
-        </div>*@
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./img/houses/10.jpg" class="w-100">
+                        </div>
+                        <div class="col-md-8 px-3">
+                            <div class="card-block px-3">
+                                <h5 class="card-title">Bán Nhà Quận 5 MT Đường Hải Thượng Lãn Ông 2 Lầu</h5>
+                                <p class="card-text-price">10.000.000.000 đ</p>
+                                <p class="card-text"></p>
+                                <br>
+                                <p class="inf-footer">Người đăng: Nguyễn Văn A | 15 phút trước | Quận 10</p>
+                            </div>
+                        </div>
+                    </div>*@
 
 
             </div>
@@ -279,17 +298,17 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="#" class="linkSocialFooter" style="display:flex">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="#" class="linkSocialFooter" style="display:flex">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="#" class="linkSocialFooter" style="display:flex">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>

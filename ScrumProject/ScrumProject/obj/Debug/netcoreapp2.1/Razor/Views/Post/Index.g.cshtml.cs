@@ -60,7 +60,7 @@ using ScrumProject.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(171, 1093, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a00d4db23b4d45f6a06317416faa1a2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21aeed78d9b3469e94f9181aca9be6f9", async() => {
                 BeginContext(177, 1080, true);
                 WriteLiteral(@"
 
@@ -101,7 +101,7 @@ using ScrumProject.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1268, 6334, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66ea1f8771684075abbbcb16f1a2cd34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00af785d70dd41a08ab13d6cf8192526", async() => {
                 BeginContext(1288, 1791, true);
                 WriteLiteral(@"
 
@@ -150,7 +150,7 @@ using ScrumProject.Models;
             ");
                 EndContext();
                 BeginContext(3079, 2379, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf567d01674d499b9be7149461887cea", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d43be5c4824416080d12c74e7c46171", async() => {
                     BeginContext(3085, 2366, true);
                     WriteLiteral(@"
                 <div class=""form-group"">
