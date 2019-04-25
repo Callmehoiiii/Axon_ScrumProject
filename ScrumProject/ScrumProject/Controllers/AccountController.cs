@@ -8,12 +8,11 @@ namespace ScrumProject.Controllers
 {
     public class AccountController
     {
-<<<<<<< HEAD
+
         public IActionResult Login()
         {
             return null;
         }
-=======
->>>>>>> origin/Kim
+
     }
 }
