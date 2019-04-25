@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using ScrumProject.Models;
 
 namespace ScrumProject.BAL
@@ -17,7 +18,9 @@ namespace ScrumProject.BAL
 
         public List<House> getAllHouse()
         {
-            return context.House.ToList();
+
+            return context.House.Include(x => x.IdAccNavigation).Include(x => x.IdAccNavigation.User).ToList();
+
         }
     }
 }

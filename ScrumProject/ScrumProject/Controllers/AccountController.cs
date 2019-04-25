@@ -7,9 +7,5 @@ namespace ScrumProject.Controllers
 {
     public class AccountController
     {
-        public IActionResult Login()
-        {
-
-        }
     }
 }
