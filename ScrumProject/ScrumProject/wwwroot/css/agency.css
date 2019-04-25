@@ -13,17 +13,20 @@ p {
   line-height: 1.75;
 }
 
-.button{
-  size: 12px;
-}
-
 a {
   color: #fed136;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
 }
 
 a:hover {
   color: #fec503;
 }
+
+
 
 .text-primary {
   color: #fed136 !important;
@@ -36,11 +39,21 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 section {
   padding: 100px 0;
+}
+
+
+.house {
+    margin: 1em;
+    
+}
+a.houseDetail {
+  text-decoration: none;
+  color: black;
 }
 
 section h2.section-heading {
@@ -219,8 +232,6 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
-
-  
 
 .service-heading {
   margin: 15px 0;

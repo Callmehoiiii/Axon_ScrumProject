@@ -23,7 +23,7 @@
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
@@ -93,31 +93,38 @@
                     </div>
 
                     <div class="col-8">
-
                     </div>
                 </div>
                 <hr>
                 <br>
                 <br>
                 <br>
+                
+ 
+               
                 @for (int i = 0; i < Model.Count; i++)
-                {
-                    <div class="row">
-                        <div class="col-md-3">
+        {
+                <a href="#" class="houseDetail">
+                    <div class="row house shadow-sm">
+                        <div class="col-md-3 ">
                             <img src="img/houses/@Model[i].Image" class="w-100">
                         </div>
                         <div class="col-md-8 px-3">
                             <div class="card-block px-3">
-                                <h5 class="card-title">@Model[i].Adress</h5>
-                                <h5 class="card-title">@Model[i].Area m</h5>
-                                <p class="card-text-price">@Model[i].Price đ</p>
+                                <h5 class="card-title">Nhà cho thuê Quận 9</h5>
+                    
+                                <p class="card-text-price"> @Model[i].Price đ</p>
                                 <p class="card-text"></p>
-                                <br>
-                                <p class="inf-footer">@Model[i].IdAccNavigation.User.Name </p>
-                           </div>
+                                <br><br><br>
+                                <p class="inf-footer"><i class="fa fa-user"></i> @Model[i].IdAccNavigation.User.Name | @Model[i].Area m |  @Model[i].Adress </p>
+                            </div>
                         </div>
                     </div>
-                }
+                    <br />
+                </a>
+           
+           
+        }
 
                 @*<div class="row">
             <div class="col-md-3">
