@@ -26,11 +26,17 @@
     offset: 56
   });
 
+  
 
-  $('$phone').click(function() {
-    Swal.fire('Any fool can use a computer')
+    $('#phoneShow').click(function(){
+      $('#phoneShow').hide();
+      $('#phones').show();
+      
+    });
+
     
-  })
+    
+
 
   // Collapse Navbar
   var navbarCollapse = function() {

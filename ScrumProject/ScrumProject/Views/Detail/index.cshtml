@@ -1,4 +1,4 @@
-﻿﻿@{
+﻿@{
 
 Layout = null;
 
@@ -43,7 +43,7 @@ Layout = null;
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Student Accomodation</a>
+                <a class="navbar-brand js-scroll-trigger" asp-controller="Homepage">Student Accomodation</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -53,7 +53,7 @@ Layout = null;
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#services">Trang chủ</a>
+                            <a class="nav-link js-scroll-trigger" href="#">Trang chủ</a>
                         </li>
 
                         <li class="nav-item">
@@ -94,7 +94,7 @@ Layout = null;
                         <hr>
                         </hr>
                         <div class="btn btn-primary" id="phoneShow">Xem số điện thoại</div>
-                        <h3 class="phone " id="phone">0353030643</h3>
+                        <h3 class="phone " id="phones">0353030643</h3>
                         <br><br><br><br><br><br><br>
 
                         <img src="./img/caution.png" class="rounded" style="width: 100%; height: 60px;">
@@ -222,7 +222,7 @@ Layout = null;
         <script src="js/contact_me.js"></script>
 
         <!-- Custom scripts for this template -->
-        <script src="./js/agency.js"></script>
+        <script src="js/agency.js"></script>
         <script src="js/sweetalert2.all.min.js"></script>
 
     </body>

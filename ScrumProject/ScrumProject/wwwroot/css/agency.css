@@ -719,3 +719,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .info-House{
   padding: 1em;
 }
+
+.phone{
+  color: #e4001c;
+  display: none;
+}
