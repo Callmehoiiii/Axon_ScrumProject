@@ -53,7 +53,7 @@ namespace ScrumProject
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Homepage}/{action=Index}/{id?}");
             });
         }
     }
