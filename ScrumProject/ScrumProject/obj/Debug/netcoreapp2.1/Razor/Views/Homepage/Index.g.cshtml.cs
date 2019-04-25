@@ -70,7 +70,7 @@ using ScrumProject.Models;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(79, 1096, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa56d66eecd540dea8c9c0f37b7eabd3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3b0552b221e48f3badf37569a7e3f91", async() => {
                 BeginContext(85, 1083, true);
                 WriteLiteral(@"
 
@@ -111,7 +111,7 @@ using ScrumProject.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1179, 12303, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a022edf20d44b84b0af4c4913c8878b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ee0963fe977459a8903f60a2916ca80", async() => {
                 BeginContext(1199, 1956, true);
                 WriteLiteral(@"
 
@@ -165,7 +165,7 @@ using ScrumProject.Models;
                         ");
                 EndContext();
                 BeginContext(3155, 481, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44ba9ba33f00453e854b641c74eb5c2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1458f10011d3403fbbab2b97f3ae1be4", async() => {
                     BeginContext(3191, 438, true);
                     WriteLiteral(@"
                             <div class=""form-group has-feedback"">

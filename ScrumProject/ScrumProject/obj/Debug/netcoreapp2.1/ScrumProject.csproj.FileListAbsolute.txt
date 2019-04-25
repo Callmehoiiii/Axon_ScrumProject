@@ -26,3 +26,5 @@ D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\Sc
 D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\ScrumProject.pdb
 D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\ScrumProject.csproj.CopyComplete
 D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\Razor\Views\Homepage\Index.g.cshtml.cs
+D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\ScrumProject.csprojAssemblyReference.cache
+D:\github\Axon_ScrumProject\ScrumProject\ScrumProject\obj\Debug\netcoreapp2.1\Razor\Views\Login\Index.g.cshtml.cs
