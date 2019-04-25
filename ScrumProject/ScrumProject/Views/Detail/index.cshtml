@@ -1,0 +1,230 @@
+﻿@{
+
+Layout = null;
+
+}
+@model List<ScrumProject.Models.House>
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Agency - Start Bootstrap Theme</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+            type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet'
+            type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/agency.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" asp-controller="Homepage">Student Accomodation</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#">Trang chủ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Đội ngũ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Liên hệ</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div>
+                <a type="button" class="btn btn-primary" asp-controller="Login">Đăng nhập</a>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="text-center">
+                            <img src="./img/houses/10.jpg" class="rounded detailHouse">
+                        </div>
+                    </div>
+
+                    <div class="col-4 info-House">
+                        <div class="row">
+
+                        </div>
+                        <h4><i class="fa fa-user"></i> Nguyễn Văn A</h4>
+                        <p class="inf-footer"> 12 Vo Van Ngan, Thu Duc </p>
+                        <hr>
+                        </hr>
+                        <div class="btn btn-primary" id="phoneShow">Xem số điện thoại</div>
+                        <h3 class="phone " id="phones">0353030643</h3>
+                        <br><br><br><br><br><br><br>
+
+                        <img src="./img/caution.png" class="rounded" style="width: 100%; height: 60px;">
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <br>
+                        <h3>Nhà cho thuê 12 Vo Van Ngan, Thu Duc</h3>
+                        <div class="card-text-price">
+                            2.000.000 đ
+                        </div>
+                        <div class="inf-footer">8 x 4 m</div>
+                        <br>
+                        <p class="description">
+                            Cần xoay vốn làm ăn nên tôi muốn bán căn nhà 1 trệt 1 lầu vừa mới xây xong trên đường Đinh
+                            Đức Thiện cách chợ Bình Chánh 3km
+                            -nhà nằm khu dân cư đông đúc, an ninh, có vỉa hè cây xanh thoáng mát
+                            Đường trước nhà 10m, ko ngập nước, nhà có 4 phòng ngủ 3 wc sân trước sân sau, phòng khách
+                            phòng bếp
+                            - chỉ cần thanh toán trước cho tôi 900 triệu nhận nhà ở, phần còn lại tôi cho trả chậm
+                            Sổ hồng riêng bao sang tên công chứng ngay
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fa fa-map" aria-hidden="true" style="margin-right: 1em;"></i>Diện tích: 8m x
+                                8m
+                            </div>
+                            <div class="col-6">
+                                <i class="fa fa-toilet-paper" aria-hidden="true" style="margin-right: 1em;"></i>Số nhà vệ sinh: 2
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fa fa-wind" aria-hidden="true" style="margin-right: 1em;"></i>Máy lạnh: Có
+                            </div>
+                            <div class="col-6">
+                                <i class="fa fa-home" aria-hidden="true" style="margin-right: 1em;"></i>Loại căn hộ: Nhà
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fa fa-scroll" aria-hidden="true" style="margin-right: 1em;"></i>Giấy tờ pháp lý: Đã có sổ đỏ/sổ hồng
+                            </div>
+                            <div class="col-6">
+                                <i class="fa fa-key" aria-hidden="true" style="margin-right: 1em;"></i>Số phòng ngủ: 4 phòng
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="inf-footer">
+                           <i class="fa fa-map-marker-alt" style="margin-right: 1em;"></i>Địa chỉ: 12 Vo Van Ngan, Thu Duc
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; CL-Five Team 2019</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#" class="linkSocialFooter" style="display:flex">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="linkSocialFooter" style="display:flex">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="linkSocialFooter" style="display:flex">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Contact form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/agency.js"></script>
+        <script src="js/sweetalert2.all.min.js"></script>
+
+    </body>
+
+    </html>
