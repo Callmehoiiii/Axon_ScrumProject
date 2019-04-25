@@ -13,6 +13,10 @@ p {
   line-height: 1.75;
 }
 
+.button{
+  size: 12px;
+}
+
 a {
   color: #fed136;
 }
