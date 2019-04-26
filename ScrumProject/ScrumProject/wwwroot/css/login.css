@@ -13,21 +13,28 @@ font-family: 'Numans', sans-serif;
 .container{
 height: 100%;
 align-content: center;
-position: inherit; 
+position: inherit;
 
 }
 .container-sm{
-height: 30%;    
-align-content: center;
-position: inherit; 
+height: 50%;
 }
+
 .card{
-height: 370px;
+height: 350px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
 }
+
+.card-reg{
+    height: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
 
 .social_icon span{
 font-size: 50px;
@@ -82,7 +89,7 @@ margin-right: 5px;
 .login_btn{
 color: black;
 background-color: #FFC312;
-width: 100px;
+width: 120px;
 }
 
 .login_btn:hover{
