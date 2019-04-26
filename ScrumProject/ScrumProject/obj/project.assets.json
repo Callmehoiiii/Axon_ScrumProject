@@ -12537,23 +12537,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Phong Linh\\.nuget\\packages\\": {},
+    "C:\\Users\\super\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "projectUniqueName": "D:\\baitap\\AxonScrumProject\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
       "projectName": "ScrumProject",
-      "projectPath": "D:\\github\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
-      "packagesPath": "C:\\Users\\Phong Linh\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\obj\\",
+      "projectPath": "D:\\baitap\\AxonScrumProject\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+      "outputPath": "D:\\baitap\\AxonScrumProject\\Axon_ScrumProject\\ScrumProject\\ScrumProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Phong Linh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
