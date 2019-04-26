@@ -16,11 +16,9 @@ namespace ScrumProject.BAL
             this.context = context;
         }
 
-        public UserBAL Login(string username, string password)
+        public User Login(string username, string password)
         {
-            return context.User.Include(user => user.IdAccNavigation)
-                .FirstOrDefault(user =>
-                    user.IdAccNavigation.UserName == username && user.IdAccNavigation.Password == password);
+            return context.User.Include(user => user.IdAccNavigation).FirstOrDefault(user =>user.IdAccNavigation.UserName == username && user.IdAccNavigation.Password == password);
         }
 
         public Task<int> InsertAccount(Account account)
