@@ -65,14 +65,14 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Liên hệ</a>
                     </li>
-                   
+
                 </ul>
-              
+
             </div>
-            
+
         </div>
-        <div >
-            <a type="button" class="btn btn-primary" asp-controller="Login">Đăng nhập</a>
+        <div>
+            <a type="button" class="btn btn-primary" asp-controller="Login">Đăng xuất</a>
         </div>
     </nav>
 
@@ -86,16 +86,18 @@
             </div>
         </div>
     </header>
-    
+
     <section>
         <div class="container">
             <div class="wrapper">
                 <div class="row">
                     <div class="col-4">
-                            <h2><i class="fa fa-user" aria-hidden="true" style="margin-right: 1em;"></i>Nguyễn Văn A</h2>
-                            <hr>
-                    </div>
+                        <h2><i class="fa fa-user" aria-hidden="true" style="margin-right: 1em;"></i>Nguyễn Văn A</h2>
+                        <hr>
                         
+                        <a class="btn btn-primary" asp-Controller = "Post">Đăng bài</a><br><br>
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col-4">
@@ -107,34 +109,34 @@
                             </div>
                         </form>
                     </div>
-                    
+
                     <div class="col-8">
 
-                        
 
-                            <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                      <a class="nav-link " href="#">Tin mới nhất</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Tin nổi bật</a>
-                                    </li>
-                                    
-                                    <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Giá thấp trước</a>
-                                            <div class="dropdown-menu">
-                                              <a class="dropdown-item" href="#">Giá cao trước</a>
-                                           
-                                            </div>
-                                          </li>
-                                  </ul>
+
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Tin mới nhất</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin nổi bật</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Giá thấp trước</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Giá cao trước</a>
+
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <hr>
                 <br>
                 <br>
                 <br>
-                
+
 
 
 
@@ -151,24 +153,26 @@
 
                                     <p class="card-text-price"> @Model[i].Price đ</p>
                                     <p class="card-text"></p>
-                                    <div class="btn-group">
-                                        <a class="btn btn-primary" href = "#">Sửa</a>
-                                        <a class="btn btn-danger" href = "#">Xoá</a>
-                                    </div>
+
                                     <br><br>
                                     <p class="inf-footer"><i class="fa fa-user"></i> @Model[i].IdAccNavigation.User.Name | @Model[i].Area m |  @Model[i].Adress </p>
+
                                 </div>
                             </div>
                         </div>
                         <br />
                     </a>
-
+                    <div class="col-4" style="margin-left:1em;">
+                        <a class="btn btn-primary" href="#">Sửa</a>
+                        <a class="btn btn-danger" href="#">Xoá</a>
+                    </div>
+                    
 
                 }
 
-               
 
-                
+
+
 
             </div>
         </div>
