@@ -10,12 +10,12 @@ using ScrumProject.BAL;
 
 namespace ScrumProject.Controllers
 {
-    public class HomepageController : Controller
+    public class PersonalpageController : Controller
     {
         private Scrum_StudentAccomodationContext context;
         private HouseBAL houseBAL;
 
-        public HomepageController(Scrum_StudentAccomodationContext context)
+        public PersonalpageController(Scrum_StudentAccomodationContext context)
         {
             this.houseBAL = new HouseBAL(context);
         }
@@ -27,21 +27,5 @@ namespace ScrumProject.Controllers
             return View(houseList);
         }
 
-        [HttpGet]
-        public IActionResult Filter(string type)
-        {
-            if (type == "High")
-            {
-                List<House> houseList = new List<House>();
-                houseList = houseBAL.getAllHouseHightoLow();
-                return View("Index", houseList);
-            }
-            else
-            {
-                List<House> houseList = new List<House>();
-                houseList = houseBAL.getAllHouseLowtoHigh();
-                return View("Index", houseList);
-            }
-        }
     }
 }

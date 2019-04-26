@@ -23,6 +23,22 @@ namespace ScrumProject.BAL
 
         }
 
+        public List<House> getAllHouseLowtoHigh()
+        {
+
+            return context.House.Include(x => x.IdAccNavigation).Include(x => x.IdAccNavigation.User)
+                .OrderBy(x => int.Parse(x.Price)).ToList();
+
+        }
+
+        public List<House> getAllHouseHightoLow()
+        {
+
+            return context.House.Include(x => x.IdAccNavigation).Include(x => x.IdAccNavigation.User)
+                .OrderByDescending(x => int.Parse(x.Price)).ToList();
+
+        }
+
         public int NextIDHouse()
         {
             return context.House.Count();
