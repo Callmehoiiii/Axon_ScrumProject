@@ -39,7 +39,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Student Accomodation</a>
+            <a class="navbar-brand js-scroll-trigger" asp-action="Index" asp-controller="Homepage">Student Accomodation</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -77,27 +77,30 @@
 
     <section>
         <div class="container">
-            <form>
+            <form asp-action="Post" asp-controller="Post" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Tiêu đề</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                    <label for="exampleInputEmail1">Địa chỉ</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" 
+                           name="diachi">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div> -->
                 <div class="form-group">
                   <label for="exampleInputPassword1">Diện tích </label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="dientich">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Giá cho thuê</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="" name="gia">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Người cho thuê</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="user" 
+                             value="@Model.Name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Số điện thoại</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="sodienthoai" 
+                             value="@Model.Phone">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Hình ảnh</label>
@@ -107,7 +110,7 @@
                             <div class="input-group">
                                 <span class="input-group-btn">
                                     <span class="btn btn-default btn-file">
-                                         <input type="file" id="imgInp">
+                                         <input type="file" id="imgInp" name="image" accept="image/*"  onchange="readURL(this);">
                                     </span>
                                 </span>
                                 
@@ -180,7 +183,21 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
+            reader.onload = function (e) {
+                $('#img-upload')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
 </body>
 
 </html>
